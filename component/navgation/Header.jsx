@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Link from 'next/link';
 import ChangeLanguage from "@/component/navgation/ChangeLanguage";
+import {MenuItem, Select} from "@mui/material";
 
 const Header = () => {
 
@@ -25,6 +26,9 @@ const Header = () => {
                     <Link href="/articles" passHref>
                         <Button color="inherit">Articles</Button>
                     </Link>
+                    <Link href="/categories" passHref>
+                        <Button color="inherit">Categories</Button>
+                    </Link>
                     <Link href="/about-us" passHref>
                         <Button color="inherit">About Us</Button>
                     </Link>
@@ -34,6 +38,11 @@ const Header = () => {
                     <Link href="/create-article" passHref>
                         <Button color="inherit">Create Article</Button>
                     </Link>
+                    <Select>
+                        <MenuItem>Create</MenuItem>
+                        <MenuItem> <Link href='create-categories'>Create Categories</Link> </MenuItem>
+                        <MenuItem> <Link href='create-articles'>Create Articles</Link> </MenuItem>
+                    </Select>
                     {/*<Button color="inherit">Change Language</Button>*/}
                 </Box>
                 <ChangeLanguage/>
