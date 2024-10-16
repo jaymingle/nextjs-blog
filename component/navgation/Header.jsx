@@ -30,16 +30,12 @@ const Header = () => {
                     <Link href="/categories" passHref>
                         <Button color="inherit">Categories</Button>
                     </Link>
-                    <Link href="/about-us" passHref>
+                    <Link href="/about_us" passHref>
                         <Button color="inherit">About Us</Button>
                     </Link>
-                    <Link href="/contact-us" passHref>
+                    <Link href="/contact_us" passHref>
                         <Button color="inherit">Contact Us</Button>
                     </Link>
-                    {/*<Link href="/create-article" passHref>*/}
-                    {/*    <Button color="inherit">Create Article</Button>*/}
-                    {/*</Link>*/}
-                    {/*<Button color="inherit">Change Language</Button>*/}
                 </Box>
                 <Create/>
                 <ChangeLanguage/>

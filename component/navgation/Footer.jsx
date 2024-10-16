@@ -19,7 +19,7 @@ const Footer = () => {
                 {/* Column 1: Logo */}
                 <Grid item xs={12} sm={6} md={3}>
                     <Typography variant="h6" component="div">
-                        MyBlog
+                        <Link href='/'>MyBlog</Link>
                     </Typography>
                 </Grid>
 
