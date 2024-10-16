@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Grid } from '@mui/material';
 
 const ArticleCard = ({ title, content, date, category, image }) => {
     return (
-        <Card sx={{ display: 'flex', marginBottom: '1.5rem', maxWidth: '600px' }}>
+        <Card sx={{ display: 'flex', marginBottom: '1.5rem', maxWidth: '850px', height: '200px', paddingY: 1, paddingX: 1 }}>
             <Grid container>
                 {/* Image Column - 30% width */}
                 <Grid item xs={12} sm={4}>
@@ -11,7 +11,7 @@ const ArticleCard = ({ title, content, date, category, image }) => {
                         component="img"
                         sx={{
                             width: '100%',
-                            height: '150px', // Adjust the height for a smaller image
+                            height: '190px', // Adjust the height for a smaller image
                             objectFit: 'cover',
                         }}
                         src={image}
@@ -25,10 +25,10 @@ const ArticleCard = ({ title, content, date, category, image }) => {
                         <Typography variant="h6" component="div" gutterBottom> {/* Smaller font for title */}
                             {title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary" paragraph>
+                        <Typography sx={{marginY: 3}} variant="body2" color="text.secondary" paragraph>
                             {content.length > 100 ? content.slice(0, 100) + '...' : content} {/* Limit content length */}
                         </Typography>
-                        <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}> {/* Reduce margin */}
+                        <Box sx={{ display: 'flex', gap: 2, mt: 1 }}> {/* Reduce margin */}
                             <Typography variant="body2" color="text.secondary">
                                 {date}
                             </Typography>

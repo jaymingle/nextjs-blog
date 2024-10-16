@@ -17,11 +17,26 @@ const blogPosts = [
         category: 'Development',
         image: 'https://via.placeholder.com/300x200',
     },
+    {
+        title: 'Next.js vs React',
+        content: 'Next.js builds on top of React to provide better performance...',
+        date: 'October 12, 2024',
+        category: 'Development',
+        image: 'https://via.placeholder.com/300x200',
+    },
 ];
 
 const Articles = () => {
     return (
-        <Box sx={{marginY: 10, marginX: 20}}>
+        <Box sx={{
+            marginY: 5,
+            marginX: 20,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 2,
+        }}>
             {blogPosts.map((post, index) => (
                 <ArticleCard
                     key={index}
