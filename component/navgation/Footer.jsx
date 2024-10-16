@@ -12,6 +12,7 @@ const Footer = () => {
                 padding: '2rem 0',
                 mt: 'auto',
                 borderTop: '1px solid #e0e0e0',
+                marginX: 2
             }}
         >
             <Grid container spacing={4} justifyContent="space-between">
