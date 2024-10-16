@@ -14,7 +14,7 @@ export default function Home() {
       <Box sx={{marginY: 5, marginX: 20}}>
           <Box sx={{display: 'flex', gap: 5}}>
               <Box>
-                  <Link href='/'>
+                  <Link href='/articles'>
                       <Image src={blogImage} alt='View Articles' width={500} height={650}  />
                   </Link>
 
@@ -24,7 +24,7 @@ export default function Home() {
                           color: 'blue'
                       }
                   }}>
-                      <Link href='/'>View Articles</Link>
+                      <Link href='/articles'>View Articles</Link>
                   </Typography>
               </Box>
 

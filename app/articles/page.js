@@ -1,5 +1,6 @@
 import React from 'react';
 import ArticleCard from "@/component/article/ArticleCard";
+import {Box} from "@mui/material";
 
 const blogPosts = [
     {
@@ -20,7 +21,7 @@ const blogPosts = [
 
 const Articles = () => {
     return (
-        <div>
+        <Box sx={{marginY: 10, marginX: 20}}>
             {blogPosts.map((post, index) => (
                 <ArticleCard
                     key={index}
@@ -30,7 +31,8 @@ const Articles = () => {
                     category={post.category}
                     image={post.image}
                 />
-            ))}        </div>
+            ))}
+        </Box>
     );
 };
 
