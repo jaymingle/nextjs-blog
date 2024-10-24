@@ -1,13 +1,15 @@
 // pages/post.js
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
+import postImage from '@/assets/post_image.avif'
 import Image from "next/image";
 
 const PostPage = () => {
     // Dummy data
     const post = {
         title: 'Understanding React and Next.js',
-        image: 'https://via.placeholder.com/800x400', // Replace with actual image URL
+        image: postImage,
+        // image: 'https://via.placeholder.com/800x400', // Replace with actual image URL
         date: 'October 14, 2024',
         category: 'Technology',
         content: `React is a popular JavaScript library for building user interfaces. It allows developers to create reusable UI components 
@@ -30,19 +32,19 @@ Fusce vel dui. Vivamus laoreet. Phasellus dolor. Donec orci lectus, aliquam ut, 
             </Typography>
 
             {/* Image */}
-            {/*<Image src={post.image} fill/> */}
+            <Image src={post.image} width={900}  />
 
-            <Box
-                component="img"
-                sx={{
-                    width: '100%',
-                    maxHeight: '400px',
-                    objectFit: 'cover',
-                    marginBottom: '1.5rem',
-                }}
-                src={post.image}
-                alt={post.title}
-            />
+            {/*<Box*/}
+            {/*    component="img"*/}
+            {/*    sx={{*/}
+            {/*        width: '100%',*/}
+            {/*        maxHeight: '400px',*/}
+            {/*        objectFit: 'cover',*/}
+            {/*        marginBottom: '1.5rem',*/}
+            {/*    }}*/}
+            {/*    src={post.image}*/}
+            {/*    alt={post.title}*/}
+            {/*/>*/}
 
             {/* Date and Category */}
             <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
