@@ -1,6 +1,7 @@
 // pages/post.js
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
+import Image from "next/image";
 
 const PostPage = () => {
     // Dummy data
@@ -17,13 +18,15 @@ const PostPage = () => {
     };
 
     return (
-        <Container sx={{ marginTop: '2rem' }}>
+        <Container sx={{ marginTop: '2rem', paddingY: 5 }}>
             {/* Title */}
             <Typography variant="h3" component="h1" gutterBottom>
                 {post.title}
             </Typography>
 
             {/* Image */}
+            {/*<Image src={post.image} fill/> */}
+
             <Box
                 component="img"
                 sx={{
