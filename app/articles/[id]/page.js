@@ -7,7 +7,7 @@ const ArticlePage = ({params}) => {
     return (
         <div>
             <h3>The Article Page</h3>
-            <p>This is page {id}</p>
+            <p>This is page {articleId}</p>
         </div>
     );
 };

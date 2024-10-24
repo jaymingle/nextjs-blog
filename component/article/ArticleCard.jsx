@@ -22,7 +22,8 @@ const ArticleCard = ({ title, content, date, category, image }) => {
 
                 {/* Content Column - 70% width */}
                 <Grid item xs={12} sm={8}>
-                    <Link href={`/articles/1`}>Post Page
+                    <Link href={`/articles/1`}>
+
                         <CardContent sx={{ padding: '1rem' }}> {/* Reduce padding */}
                             <Typography variant="h6" component="div" gutterBottom> {/* Smaller font for title */}
                                 {title}
@@ -39,6 +40,7 @@ const ArticleCard = ({ title, content, date, category, image }) => {
                                 </Typography>
                             </Box>
                         </CardContent>
+
                     </Link>
                 </Grid>
             </Grid>
