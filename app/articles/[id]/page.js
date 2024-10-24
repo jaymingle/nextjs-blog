@@ -14,7 +14,12 @@ const PostPage = () => {
               and manage the state of their applications efficiently. Next.js, on the other hand, is a React framework that enables 
               server-side rendering, static site generation, and much more. Together, they form a powerful combination for building 
               high-performance web applications. This post will dive into the key differences between React and Next.js and how to 
-              leverage their unique features to create optimized web apps.`,
+              leverage their unique features to create optimized web apps.  Donec pede justo, fringilla vel, aliquet nec, 
+              vulputate eget, arcu. Fusce fermentum. Cras id dui. Nunc interdum lacus sit amet orci.
+                Praesent venenatis metus at tortor pulvinar varius. Fusce fermentum. Phasellus viverra nulla ut metus varius laoreet. Sed a libero.
+Fusce pharetra convallis urna. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Ut tincidunt tincidunt erat. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.
+ Fusce neque. Sed fringilla mauris sit amet nibh. Pellentesque auctor neque nec urna.
+Fusce vel dui. Vivamus laoreet. Phasellus dolor. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.`,
     };
 
     return (
