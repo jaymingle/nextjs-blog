@@ -1,10 +1,10 @@
 import React from 'react';
-import {Box, Typography} from "@mui/material";
+import {Box, TextField, Typography, Button} from "@mui/material";
 
 
 const ContactUs = () => {
     return (
-        <Box sx={{marginY: 5, marginX: 20}}>
+        <Box sx={{marginY: 5, marginX: 60}}>
             <Typography variant='h3' sx={{
                 textAlign: 'center',
                 fontSize: '26px',
