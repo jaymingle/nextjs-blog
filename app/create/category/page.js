@@ -1,3 +1,5 @@
+'use client'
+
 import React, {useState} from 'react';
 import {
     Box, IconButton,
@@ -9,9 +11,13 @@ import {
     TableRow,
     TextField,
     Typography,
-    Button
+    Button,
+    Paper
 } from "@mui/material";
-import {Edit, Delete}from '@mui/icons-material';
+
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 const CreateCategory = () => {
 
@@ -29,7 +35,7 @@ const CreateCategory = () => {
                 fontSize: '28px',
                 fontWeight: 'bold',
                 marginY: 4,
-            }}>Create New Category</Typography>
+            }}>Create Category</Typography>
 
             <Box
                 component="form"
@@ -37,6 +43,7 @@ const CreateCategory = () => {
                     display: 'flex',
                     gap: '1rem',
                     marginBottom: '2rem',
+                    marginY: 5,
                 }}
                 noValidate
                 autoComplete="off"
@@ -53,7 +60,7 @@ const CreateCategory = () => {
             </Box>
 
             {/* Categories Table */}
-            <TableContainer component={Paper}>
+            <TableContainer sx={{marginY: 15}} component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>
@@ -70,12 +77,12 @@ const CreateCategory = () => {
                                 <TableCell>{category.name}</TableCell>
                                 <TableCell>
                                     <IconButton color="primary">
-                                        <Edit />
+                                        <EditIcon />
                                     </IconButton>
                                 </TableCell>
                                 <TableCell>
                                     <IconButton color="secondary">
-                                        <Delete/>
+                                        <DeleteIcon />
                                     </IconButton>
                                 </TableCell>
                             </TableRow>
