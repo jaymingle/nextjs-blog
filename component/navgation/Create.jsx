@@ -14,8 +14,10 @@ const Create = () => {
     return (
         <Select sx={{marginX: 1}} onChange={handleCreate} value={create}>
             <MenuItem value='create'>Create</MenuItem>
-            <MenuItem value='create_categories'> <Link href='/create_category'>Create Categories</Link> </MenuItem>
-            <MenuItem value='create_articles'> <Link href='/create_article'>Create Articles</Link> </MenuItem>
+            <MenuItem value='create_categories'> <Link href='/create/category'>Create Category</Link> </MenuItem>
+            <MenuItem value='create_articles'> <Link href='/create/article'>Create Article</Link> </MenuItem>
+            {/*<MenuItem value='create_categories'> <Link href='/create_category'>Create Categories</Link> </MenuItem>*/}
+            {/*<MenuItem value='create_articles'> <Link href='/create_article'>Create Articles</Link> </MenuItem>*/}
         </Select>
     );
 };
