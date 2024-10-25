@@ -93,7 +93,7 @@ const CreateArticle = () => {
             </Box>
 
             {/* Articles Table */}
-            <TableContainer component={Paper}>
+            <TableContainer sx={{marginY: 8}} component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>
