@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Typography} from "@mui/material";
+import {Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
 
 const Categories = () => {
 
@@ -13,7 +13,7 @@ const Categories = () => {
 
 
     return (
-        <Box>
+        <Box sx={{marginX: 30, marginY: 10}}>
             <Typography variant='h3' sx={{
                 textAlign: 'center',
                 fontSize: '26px',
@@ -21,6 +21,25 @@ const Categories = () => {
                 marginY: 5
             }}>Categories</Typography>
 
+
+            <TableContainer sx={{marginTop: 8, marginBottom: 25}} component={Paper}>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell><strong>Category</strong></TableCell>
+                        <TableCell><strong>Articles</strong></TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {categories.map((category, index) => (
+                        <TableRow key={index}>
+                            <TableCell>{category.name}</TableCell>
+                            <TableCell>{category.articles}</TableCell>
+                        </TableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
 
 
         </Box>
