@@ -30,11 +30,11 @@ export default function Home() {
 
               <Box sx={{display: 'flex', flexDirection: 'column', gap: 5}}>
                     <Box>
-                        <Link href='/'>
+                        <Link href='/contact_us'>
                             <Image src={sendMessage} alt='Send email image'  width={900} height={350} />
                         </Link>
 
-                        <Typography variant='h5'> <Link href='/'> Send Message</Link>< /Typography>
+                        <Typography variant='h5'> <Link href='/contact_us'> Send Message</Link>< /Typography>
                     </Box>
 
                   <Box sx={{display: 'flex', gap: 5}}>
